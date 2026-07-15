@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Miranda Event Co.</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#faf8f4;
+color:#333;
+}
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:20px 8%;
+background:#111;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#d4af37;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+margin-left:25px;
+font-weight:500;
+transition:.3s;
+}
+
+nav a:hover{
+color:#d4af37;
+}
+
+.hero{
+height:100vh;
+background:url('https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1600&q=80') center/cover;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.overlay{
+background:rgba(0,0,0,.60);
+width:100%;
+height:100%;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding:20px;
+}
+
+.overlay h1{
+font-size:60px;
+color:white;
+}
+
+.overlay p{
+font-size:22px;
+color:#fff;
+margin:20px 0;
+}
+
+.btn{
+background:#d4af37;
+padding:15px 35px;
+text-decoration:none;
+color:white;
+border-radius:30px;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+background:#b88d21;
+}
+
+section{
+padding:90px 10%;
+}
+
+.title{
+text-align:center;
+font-size:38px;
+margin-bottom:40px;
+color:#111;
+}
+
+.about p{
+max-width:900px;
+margin:auto;
+text-align:center;
+line-height:1.8;
+font-size:18px;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:40px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,.1);
+text-align:center;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h3{
+color:#d4af37;
+margin-bottom:15px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+margin-top:30px;
+}
+
+.gallery img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:12px;
+}
+
+.contact{
+text-align:center;
+line-height:2;
+font-size:18px;
+}
+
+footer{
+background:#111;
+color:white;
+padding:30px;
+text-align:center;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">Miranda Event Co.</div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero" id="home">
+
+<div class="overlay">
+
+<h1>Miranda Event Co.</h1>
+
+<p>Creating Memorable Moments, One Event at a Time.</p>
+
+<a href="#contact" class="btn">Book Your Event</a>
+
+</div>
+
+</section><section id="about" class="about">
+
+<h2 class="title">About Us</h2>
+
+<p>
+Miranda Event Co. is a professional events management company dedicated to creating unforgettable experiences. We specialize in planning and coordinating weddings, birthdays, corporate events, school programs, exhibitions, and other special occasions. Our mission is to transform every client's vision into a memorable celebration through creativity, organization, and exceptional service.
+</p>
+
+</section>
+
+<section id="services">
+
+<h2 class="title">Our Services</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>💍 Wedding Coordination</h3>
+<p>Elegant wedding planning from preparation to the reception.</p>
+</div>
+
+<div class="card">
+<h3>🎂 Birthday Parties</h3>
+<p>Fun, creative, and unforgettable birthday celebrations.</p>
+</div>
+
+<div class="card">
+<h3>🏢 Corporate Events</h3>
+<p>Professional seminars, conferences, and company gatherings.</p>
+</div>
+
+<div class="card">
+<h3>🎓 School Programs</h3>
+<p>Graduations, recognition ceremonies, and campus events.</p>
+</div>
+
+<div class="card">
+<h3>🎪 Exhibitions</h3>
+<p>Trade shows, product launches, and promotional events.</p>
+</div>
+
+<div class="card">
+<h3>🎈 Event Styling</h3>
+<p>Beautiful decorations and venue styling for every occasion.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="gallery">
+
+<h2 class="title">Event Gallery</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=800&q=80">
+
+<img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=800&q=80">
+
+<img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=800&q=80">
+
+<img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=800&q=80">
+
+</div>
+
+</section>
+
+<section id="contact" class="contact">
+
+<h2 class="title">Contact Us</h2>
+
+<p><strong>Miranda Event Co.</strong></p>
+
+<p>📍 Rockwell, 34th Ave.</p>
+
+<p>📞 0981-073-8306</p>
+
+<p>📧 samanthamiranda@gmail.com</p>
+
+<p><strong>Business Hours:</strong><br>
+Monday – Saturday<br>
+8:00 AM – 6:00 PM
+</p>
+
+</section>
+
+<footer>
+
+<p><strong>Miranda Event Co.</strong></p>
+
+<p>Creating Memorable Moments, One Event at a Time.</p>
+
+<p>© 2026 Miranda Event Co. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>
